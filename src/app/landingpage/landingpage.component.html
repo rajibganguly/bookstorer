@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="lead">Latest Books in Our store</div>
+    <div class="latest-book p-3">
+        <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsfxrcUtlaLqSTTpA7N9cWKIopvRNtXngM2A&s" alt="latest book">
+            </div>
+            <div class="flex-grow-1 ms-3">
+              <h2 class="text-success">A Million To One</h2>
+              <p>45 Likes</p>
+              <p><strong>Author: Tony Faggioli</strong></p>
+                <p><strong>A Million to One</strong> by <em>Tony Faggioli</em> is the second book in the <strong>Millionth Trilogy</strong> and continues the supernatural thriller saga. The story follows Kyle Fasano, who finds himself entangled in a battle against demonic forces. As Kyle's mission unfolds, his wife Tamara and their family come under attack by evil entities1.</p>
+                <p>The book is known for its fast-paced plot, well-drawn characters, and unexpected twists, making it a compelling read for fans of supernatural thrillers2.</p>
+                <p>Let me know if you'd like more details about the characters or specific plot points!</p>
+            </div>
+          </div>
+    </div>
+    <hr />
+    <div class="lead">Enter to login</div>
+    <div class="d-flex justify-content-center">
+        <form [formGroup]="userForm" (ngSubmit)="onSubmit()" style="width: 500px">
+            <div class="mb-3">
+              <label for="name" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="surname" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="surname" formControlName="surname" placeholder="Enter last name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </form>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.profile {
+    display: flex
+;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    .greet {
+        color: #333
+    }
+    .icon {
+        background: #eee;
+        border-radius: 56%;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ccc;
+        font-size: 2rem;
+        letter-spacing: -0.15em;
+        overflow: hidden;
+        font-weight: bold;
+        text-align: center;
+    }
+}

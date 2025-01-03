@@ -1,0 +1,19 @@
+
+
+<app-menu></app-menu>
+
+<div class="row">
+  <div class="col-xl-6 col-md-6 col-xs-12 mb-3" *ngFor="let book of books">
+    <div class="card">
+      <span class="deleteIcon">
+        <button type="button" class="btn-danger btn-close" aria-label="Close" (click)="deleteBook(book)"></button>
+      </span>
+      <div class="card-body">
+        <h5 class="card-title text-uppercase">{{ book.title }}</h5>
+        <p class="card-text">Author: {{ book.author }}</p>
+        <button class="btn btn-dark" (click)="getBookDetail(book.id)">Edit</button>
+      </div>
+    </div>
+  </div>
+</div>
+  

@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+<h6>Please add your book into store!</h6>
+<div class="p-5 mb-4 bg-body-tertiary rounded-3">
+  
+<form [formGroup]="addBookForm">
+  <div class="mb-3">
+    <label for="title" class="form-label">Book Title</label>
+    <input type="text" class="form-control" id="title" formControlName="title" placeholder="Ex. My Book">
+  </div>
+  <div class="mb-3">
+    <label for="author" class="form-label">Author</label>
+    <input type="text" class="form-control" id="author" formControlName="author" placeholder="Ex. John Write">
+  </div>
+</form>
+
+<button class="btn btn-dark" (click)="addBookNow()">Add This Book</button>
+</div>
